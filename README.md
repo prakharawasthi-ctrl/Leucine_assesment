@@ -101,14 +101,4 @@ This system provides:
 
 ---
 
-## 🗃 Database Schema
 
-### 🧑 User Entity
-```ts
-@Entity()
-class User {
-  @PrimaryGeneratedColumn() id: number;
-  @Column({ unique: true }) username: string;
-  @Column() password: string;
-  @Column() role: 'Employee' | 'Manager' | 'Admin';
-}
