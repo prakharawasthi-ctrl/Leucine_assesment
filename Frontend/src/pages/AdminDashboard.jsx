@@ -17,7 +17,7 @@ const AdminDashboard = () => {
   const token = localStorage.getItem('token');
 
   // Access level options
-  const accessLevelOptions = ['admin', 'manager', 'employee'];
+  const accessLevelOptions = ['admin', 'read', 'write'];
 
   // 🔄 Fetch all requests
   const fetchRequests = async () => {
